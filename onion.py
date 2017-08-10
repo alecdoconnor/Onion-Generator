@@ -14,7 +14,7 @@ def searchIn(onion):
         if len(value) >= 4 and onion.startswith(value):
             results = results+"-"+value
             rating += (pow(len(value), 2) * 2)
-        elif len(value) >= 3 and onion.find(value) != -1:
+        elif len(value) >= 5 and onion.find(value) != -1:
             results = results+"-"+value
             rating += pow(len(value), 2)
     if (any(str.isdigit(c) for c in onion) == False):
